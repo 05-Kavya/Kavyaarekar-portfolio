@@ -1,3 +1,6 @@
-document.getElementById("resume-btn").addEventListener("click", () => {
-    window.location.href = "Kavya Arekar Resume.pdf";  // place your resume file in the same folder
+document.getElementById("resume-btn").addEventListener("click", function () {
+    const link = document.createElement("a");
+    link.href = "Kavya_Arekar_Resume.pdf";  
+    link.download = "Kavya_Arekar_Resume.pdf";
+    link.click();
 });
