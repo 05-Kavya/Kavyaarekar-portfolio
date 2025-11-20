@@ -117,7 +117,6 @@ section h2 {
     width: 100%;              /* image fills card */
     height: auto;
     border-radius: 10px;
-    border: 2px solid #00eaff;
 }
 
 
@@ -171,4 +170,5 @@ footer {
     background: #111;
     color: #999;
 }
+
 
