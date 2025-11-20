@@ -4,3 +4,4 @@ document.getElementById("resume-btn").addEventListener("click", function () {
     link.download = "Kavya_Arekar_Resume.pdf";
     link.click();
 });
+
