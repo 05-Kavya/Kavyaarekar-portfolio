@@ -113,13 +113,6 @@ section h2 {
     transform: scale(1.06);
 }
 
-.cert-card img {
-    width: 100%;              /* image fills card */
-    height: auto;
-    border-radius: 10px;
-}
-
-
 /* SKILLS */
 .skill-grid {
     display: grid;
@@ -170,5 +163,6 @@ footer {
     background: #111;
     color: #999;
 }
+
 
 
