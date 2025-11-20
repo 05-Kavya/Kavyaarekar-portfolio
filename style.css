@@ -86,11 +86,40 @@ section h2 {
 }
 
 /* ABOUT */
-.about, .certifications {
-    padding: 20px 60px;
+.certifications {
+    padding: 40px;
     text-align: center;
-    font-size: 18px;
 }
+
+.cert-grid {
+    display: flex;
+    flex-wrap: wrap;          /* enables wrapping */
+    gap: 30px;
+    justify-content: center;  /* centers the cards horizontally */
+    margin-top: 30px;
+}
+
+.cert-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 12px;
+    width: 320px;             /* card width → adjust if needed */
+    text-align: center;
+    border: 2px solid #00eaff;
+    transition: transform .3s;
+}
+
+.cert-card:hover {
+    transform: scale(1.06);
+}
+
+.cert-card img {
+    width: 100%;              /* image fills card */
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #00eaff;
+}
+
 
 /* SKILLS */
 .skill-grid {
@@ -142,3 +171,4 @@ footer {
     background: #111;
     color: #999;
 }
+
