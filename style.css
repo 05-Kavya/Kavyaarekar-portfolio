@@ -57,21 +57,15 @@ nav {
 }
 
 /* HOME SECTION */
-/* FULL HOME SECTION CENTERED */
-.home {
+/* HOME SECTION */
+.home-section {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 10%;
     text-align: center;
-}
-
-.home-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+    gap: 25px;
 }
 
 /* TEXT */
@@ -83,58 +77,26 @@ nav {
     color: #ffbd39;
 }
 
-/* PHOTO CARD - SMALL & CENTERED */
-.photo-card {
-    position: relative;
-    width: 130px;
-    height: 130px;
-    border-radius: 18px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 25px rgba(255, 200, 50, 0.25);
-    animation: softGlow 3s infinite ease-in-out;
+/* SMALL SQUARE PHOTO */
+.photo-box {
+    width: 120px;     /* small size */
+    height: 120px;    /* perfect square */
+    overflow: hidden; 
+    border-radius: 15px; 
 }
 
-/* Glow animation */
-@keyframes softGlow {
-    0% { box-shadow: 0 0 15px rgba(255, 200, 50, 0.2); }
-    50% { box-shadow: 0 0 30px rgba(255, 200, 50, 0.5); }
-    100% { box-shadow: 0 0 15px rgba(255, 200, 50, 0.2); }
-}
-
-/* Glow behind card */
-.photo-glow {
-    position: absolute;
-    width: 160%;
-    height: 160%;
-    border-radius: 25px;
-    background: radial-gradient(
-        rgba(255, 200, 50, 0.3),
-        rgba(255, 200, 50, 0)
-    );
-    filter: blur(45px);
-    z-index: -1;
-}
-
-/* PHOTO */
-.photo-card img {
+.photo-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; 
     border-radius: 15px;
 }
 
-/* MOBILE RESPONSIVE */
+/* MOBILE ADJUST */
 @media (max-width: 768px) {
-    .home-text h1 {
-        font-size: 2.2rem;
-    }
-    .photo-card {
-        width: 110px;
-        height: 110px;
+    .photo-box {
+        width: 100px;
+        height: 100px;
     }
 }
 
@@ -266,6 +228,7 @@ footer {
     background: #111;
     color: #999;
 }
+
 
 
 
