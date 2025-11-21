@@ -57,29 +57,43 @@ nav {
 }
 
 /* HOME SECTION */
-/* VERY SMALL SQUARE PHOTO */
+/* HOME SECTION */
+.home-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   /* This centers EVERYTHING */
+    text-align: center;
+    gap: 30px;
+}
+
+/* MEDIUM SQUARE PHOTO */
 .photo-box {
-    width: 100px;       /* very small */
-    height: 100px;      /* perfect square */
+    width: 160px;        /* medium size */
+    height: 160px;       /* perfect square */
     overflow: hidden;
-    border-radius: 12px;
-    margin-top: 10px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .photo-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 18px;
 }
 
-/* MOBILE SIZE */
+/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
     .photo-box {
-        width: 55px;
-        height: 55px;
+        width: 130px;
+        height: 130px;
     }
 }
+
 
 /* SECTION HEADINGS */
 section h2 {
@@ -206,6 +220,7 @@ footer {
     background: #111;
     color: #999;
 }
+
 
 
 
