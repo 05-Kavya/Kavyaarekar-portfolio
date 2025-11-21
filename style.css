@@ -59,8 +59,8 @@ nav {
 /* HOME SECTION */
 /* VERY SMALL SQUARE PHOTO */
 .photo-box {
-    width: 60px;       /* very small */
-    height: 60px;      /* perfect square */
+    width: 100px;       /* very small */
+    height: 100px;      /* perfect square */
     overflow: hidden;
     border-radius: 12px;
     margin-top: 10px;
@@ -206,6 +206,7 @@ footer {
     background: #111;
     color: #999;
 }
+
 
 
 
