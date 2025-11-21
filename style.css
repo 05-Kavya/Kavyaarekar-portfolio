@@ -57,26 +57,46 @@ nav {
 }
 
 /* HOME SECTION */
-.home {
-    height: 90vh;
+/* Home Section Layout */
+.home-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 50px;
-    background: linear-gradient(135deg, #001f33, #000);
+    padding: 80px 50px;
+    flex-wrap: wrap;
 }
 
-.home-text h1 {
-    font-size: 48px;
+/* Square Photo Styling */
+.home-photo img {
+    width: 300px;
+    height: 300px;
+    border-radius: 12px; /* square with rounded corners */
+    object-fit: cover;
+    border: 3px solid gold;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+    transition: 0.3s ease;
 }
 
-.home-text h1 span {
-    color: #00eaff;
+/* Hover Effect */
+.home-photo img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.7);
 }
 
-.home-text h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+/* Responsive for Mobile */
+@media (max-width: 800px) {
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-photo img {
+        margin-top: 25px;
+        width: 230px;
+        height: 230px;
+    }
 }
+
 
 /* SECTION HEADINGS */
 section h2 {
@@ -203,6 +223,7 @@ footer {
     background: #111;
     color: #999;
 }
+
 
 
 
