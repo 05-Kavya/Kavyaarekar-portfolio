@@ -66,24 +66,24 @@ nav {
     flex-wrap: wrap;
 }
 
-/* Square Photo Styling */
+/* Small Square Photo */
 .home-photo img {
-    width: 300px;
-    height: 300px;
-    border-radius: 12px; /* square with rounded corners */
+    width: 180px;     /* smaller size */
+    height: 180px;
+    border-radius: 10px; /* smooth square */
     object-fit: cover;
     border: 3px solid gold;
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
     transition: 0.3s ease;
 }
 
-/* Hover Effect */
+/* Hover animation */
 .home-photo img:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(255, 215, 0, 0.7);
+    box-shadow: 0 0 18px rgba(255, 215, 0, 0.7);
 }
 
-/* Responsive for Mobile */
+/* Mobile view */
 @media (max-width: 800px) {
     .home-container {
         flex-direction: column;
@@ -91,11 +91,12 @@ nav {
     }
 
     .home-photo img {
-        margin-top: 25px;
-        width: 230px;
-        height: 230px;
+        margin-top: 20px;
+        width: 150px;   /* smaller for phone */
+        height: 150px;
     }
 }
+
 
 
 /* SECTION HEADINGS */
@@ -223,6 +224,7 @@ footer {
     background: #111;
     color: #999;
 }
+
 
 
 
