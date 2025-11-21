@@ -66,65 +66,37 @@ nav {
     flex-wrap: wrap;
 }
 
-/* High-End Photo Card */
-.home-photo-card {
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 18px;
-    backdrop-filter: blur(6px);
-    border: 1px solid rgba(255, 215, 0, 0.4);
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
-    animation: softGlow 2.5s ease-in-out infinite alternate;
+/* Small Square Photo */
+.home-photo img {
+    width: 180px;     /* smaller size */
+    height: 180px;
+    border-radius: 10px; /* smooth square */
+    object-fit: cover;
+    border:none;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
     transition: 0.3s ease;
 }
 
-/* Photo styling */
-.home-photo-card img {
-    width: 170px;
-    height: 170px;
-    border-radius: 12px;
-    object-fit: cover;
-    display: block;
+/* Hover animation */
+.home-photo img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 18px rgba(255, 215, 0, 0.7);
 }
 
-/* Soft Glow Animation */
-@keyframes softGlow {
-    from {
-        box-shadow: 
-            0 0 10px rgba(255, 215, 0, 0.3),
-            0 0 20px rgba(255, 215, 0, 0.2);
-    }
-    to {
-        box-shadow: 
-            0 0 22px rgba(255, 215, 0, 0.5),
-            0 0 35px rgba(255, 215, 0, 0.4);
-    }
-}
-
-/* Hover Animation (Premium feel) */
-.home-photo-card:hover {
-    transform: translateY(-6px) scale(1.03);
-    box-shadow: 
-        0 0 30px rgba(255, 215, 0, 0.6),
-        0 0 45px rgba(255, 215, 0, 0.5);
-}
-
-/* Mobile Friendly */
+/* Mobile view */
 @media (max-width: 800px) {
     .home-container {
         flex-direction: column;
         text-align: center;
     }
 
-    .home-photo-card {
-        margin-top: 25px;
-    }
-
-    .home-photo-card img {
-        width: 150px;
+    .home-photo img {
+        margin-top: 20px;
+        width: 150px;   /* smaller for phone */
         height: 150px;
     }
 }
+
 
 /* SECTION HEADINGS */
 section h2 {
@@ -251,6 +223,7 @@ footer {
     background: #111;
     color: #999;
 }
+
 
 
 
