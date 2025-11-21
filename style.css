@@ -121,7 +121,6 @@ section h2 {
 
 /* SKILLS */
 /* Skills Section */
-/* Skills Section */
 .skills {
     padding: 50px;
     text-align: center;
@@ -141,7 +140,7 @@ section h2 {
     border-radius: 12px;
     min-width: 180px;
     text-align: center;
-    transition: 0.3s ease;
+    transition: 0.3s ease-in-out;
 }
 
 .skill-item p {
@@ -150,22 +149,21 @@ section h2 {
     margin-bottom: 8px;
 }
 
-/* Animated Stars */
+/* Golden stars */
 .stars {
     font-size: 24px;
     color: gold;
     letter-spacing: 2px;
-    animation: glow 1.5s ease-in-out infinite alternate;
+    transition: 0.3s ease;
 }
 
-/* Star glow animation */
-@keyframes glow {
-    from { 
-        text-shadow: 0 0 3px gold, 0 0 6px gold; 
-    }
-    to { 
-        text-shadow: 0 0 8px gold, 0 0 12px gold; 
-    }
+/* Hover effect — Glow + Slight Zoom */
+.skill-item:hover .stars {
+    transform: scale(1.15);
+    text-shadow: 
+        0 0 8px gold,
+        0 0 15px gold,
+        0 0 25px gold;
 }
 
 
@@ -205,6 +203,7 @@ footer {
     background: #111;
     color: #999;
 }
+
 
 
 
