@@ -58,7 +58,7 @@ nav {
 
 /* HOME SECTION */
 /* HOME SECTION */
-.home-section {
+.home-container {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -220,6 +220,7 @@ footer {
     background: #111;
     color: #999;
 }
+
 
 
 
