@@ -232,6 +232,12 @@ section h2 {
     opacity: 0;
     transform: translateY(30px);
     transition: 0.3s ease-in-out;
+    .contact-item p, 
+.contact-item a {
+    color: #000 !important;        /* Black text */
+    font-weight: 600;
+}
+
 }
 
 /* Hover Effect (Card Lift + Glow) */
@@ -283,6 +289,7 @@ section h2 {
         transform: translateY(0);
     }
 }
+
 
 
 
