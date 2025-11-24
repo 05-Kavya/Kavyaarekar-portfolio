@@ -222,7 +222,7 @@ section h2 {
 
 /* Contact Card Box */
 .contact-card {
-    background: #111;
+    background: #ffffff;
     border-radius: 20px;
     padding: 35px;
     width: 380px;
@@ -283,6 +283,7 @@ section h2 {
         transform: translateY(0);
     }
 }
+
 
 
 
