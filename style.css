@@ -215,27 +215,75 @@ section h2 {
     border-radius: 6px;
 }
 
-/* CONTACT FORM */
-.contact form {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    margin: auto;
-    gap: 15px;
-}
-
-.contact input, .contact textarea {
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-}
-
-footer {
+.contact {
     text-align: center;
-    padding: 20px;
-    background: #111;
-    color: #999;
+    padding: 60px 20px;
 }
+
+/* Contact Card Box */
+.contact-card {
+    background: #111;
+    border-radius: 20px;
+    padding: 35px;
+    width: 380px;
+    margin: 0 auto;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    animation: slideUp 0.8s ease forwards;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover Effect (Card Lift + Glow) */
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 35px rgba(10,102,194,0.6);
+}
+
+/* Icons + Text Layout */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 18px 0;
+    justify-content: center;
+}
+
+.contact-item img {
+    width: 32px;
+    height: 32px;
+    transition: 0.3s;
+}
+
+/* Icon Hover Effect */
+.contact-item:hover img {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 6px #0A66C2);
+}
+
+.contact-item a {
+    color: #0A66C2;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/* Slide-Up Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 
 
