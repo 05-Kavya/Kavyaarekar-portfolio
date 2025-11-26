@@ -119,58 +119,77 @@ section h2 {
 }
 
 /* ABOUT */
+/* CERTIFICATIONS SECTION */
 .certifications {
-    padding: 40px;
+    padding: 60px 20px;
     text-align: center;
 }
 
+.certifications h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Grid layout */
 .cert-grid {
-    display: flex;
-    flex-wrap: wrap;          /* enables wrapping */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
-    justify-content: center;  /* centers the cards horizontally */
     margin-top: 30px;
 }
 
+/* Certification card */
 .cert-card {
     background: #111;
     padding: 20px;
     border-radius: 12px;
-    width: 320px;             /* card width → adjust if needed */
-    text-align: center;
-    border: none;
-    transition: transform .3s;
-}
-
-.cert-card:hover {
-    transform: scale(1.06);
-}
-.cert-card img {
-    width: 100%;              /* image fills card */
-    height: auto;
-    border-radius: 10px;
-    border: none;
-}
-.cred-btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 18px;
-    background: #0A66C2;    /* LinkedIn Blue */
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-    border-radius: 8px;
-    text-decoration: none;
+    border: 1px solid #333;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     transition: 0.3s ease;
+    height: 380px;              /* 🔥 FIX: All cards same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-/* Hover Effect */
+/* Hover animation */
+.cert-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+
+/* Certificate Image */
+.cert-card img {
+    width: 100%;
+    height: 180px;              /* 🔥 FIX: All images same height */
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #444;
+    margin-bottom: 10px;
+}
+
+/* Certificate Title */
+.cert-card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+    height: 50px;               /* 🔥 Equal title height */
+    overflow: hidden;
+}
+
+/* Credential Button */
+.cred-btn {
+    background: #ff4c29;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
 .cred-btn:hover {
-    background: #004b96;
-    box-shadow: 0 0 10px rgba(10, 102, 194, 0.6);
-    transform: translateY(-3px);
+    background: #ff2a00;
 }
-
 
 /* SKILLS */
 /* Skills Section */
@@ -309,6 +328,7 @@ section h2 {
         transform: translateY(0);
     }
 }
+
 
 
 
