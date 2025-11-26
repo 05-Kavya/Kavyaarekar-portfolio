@@ -299,7 +299,7 @@ section h2 {
 
 /* Credential Button */
 .cred-btn {
-    background: #ff4c29;
+    background: #00eaff;
     padding: 8px 12px;
     border-radius: 6px;
     text-decoration: none;
@@ -449,6 +449,7 @@ section h2 {
         transform: translateY(0);
     }
 }
+
 
 
 
