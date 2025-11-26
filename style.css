@@ -146,6 +146,10 @@ section h2 {
 }
 
 /* Internship Section */
+html {
+    scroll-behavior: smooth;
+}
+
 .internships {
     padding: 60px 20px;
     text-align: center;
@@ -449,6 +453,7 @@ section h2 {
         transform: translateY(0);
     }
 }
+
 
 
 
