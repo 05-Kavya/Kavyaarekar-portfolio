@@ -119,6 +119,18 @@ section h2 {
 }
 
 /* ABOUT */
+/* ABOUT SECTION */
+.about {
+    padding: 60px 20px;
+
+    /* Center the box horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
 .about-box {
     background: #111;
     padding: 40px;
@@ -128,20 +140,12 @@ section h2 {
     border: 1px solid #333;
     box-shadow: 0 0 15px rgba(255,255,255,0.1);
 
-    /* Animation */
+    /* Center text inside the box (optional) */
+    text-align: left;
+
+    /* Fade-in animation */
     opacity: 0;
     animation: fadeInUp 1.2s ease forwards;
-}
-/* Fade-in Animation */
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 /* CERTIFICATIONS SECTION */
@@ -353,6 +357,7 @@ section h2 {
         transform: translateY(0);
     }
 }
+
 
 
 
