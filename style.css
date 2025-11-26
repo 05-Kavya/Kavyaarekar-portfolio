@@ -126,8 +126,6 @@ section h2 {
     /* Center the box horizontally */
     display: flex;
     justify-content: center;
-    align-items: center;
-
     width: 100%;
 }
 
@@ -144,7 +142,6 @@ section h2 {
     text-align: left;
 
     /* Fade-in animation */
-    opacity: 0;
     animation: fadeInUp 1.2s ease forwards;
 }
 
@@ -357,6 +354,7 @@ section h2 {
         transform: translateY(0);
     }
 }
+
 
 
 
